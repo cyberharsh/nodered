@@ -8,6 +8,6 @@ RUN npm install -g --unsafe-perm node-red node-red-admin
 RUN apt-get install python -y
 RUN apt-get install python-pip -y
 RUN pip install paho-mqtt
-RUN apt-get install mosquitto
-RUN apt-get install mosquitto-clients
+RUN apt-get install mosquitto -y
+RUN apt-get install mosquitto-clients -y
 ADD mqttpub.py /
